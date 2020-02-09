@@ -31,7 +31,7 @@ public class Message {
 
 		// Sets the size of the encoded array to 128bits
 		encoded = new byte[MessageConfig.SEGMENTSIZE];
-		// Sets the first bit to the size of the payload(data message)
+		// Sets the first bit to the size of the payload (data message)
 		encoded[0] = (byte) payload.length;
 		// Copy the content of the payload into the encoded array
 		System.arraycopy(payload, 0, encoded, 1, payload.length);
